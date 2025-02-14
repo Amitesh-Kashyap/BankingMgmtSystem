@@ -11,5 +11,8 @@ public interface TransactionDB extends JpaRepository<Transact , Integer>
     List<Transact> findBySenderID(String senderID);
     List<Transact> findByReceiverID(String receiverID);
     List<Transact> findByTransactionType( AllConstants.TransactionType type);
+
+    void deleteBySenderID(String senderID);
+    void deleteByReceiverID(String senderID);
     // find by ID will already be there    
 }

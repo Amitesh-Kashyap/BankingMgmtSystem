@@ -12,5 +12,6 @@ public interface LoanDB extends JpaRepository<Loan , Integer>
     // No need to define any methods here as JpaRepository already provides all the basic CRUD operations.
     // Only custom ones here
     List<Loan> findByUserID(String userID);
+    void deleteByUserID(String userID);
     
 }

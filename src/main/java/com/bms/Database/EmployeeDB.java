@@ -8,5 +8,6 @@ import com.bms.Models.Employee;
 public interface EmployeeDB extends JpaRepository<Employee, Integer>
 {
     List<Employee> findByName(String name);
+    void deleteByName(String name);
     
 }

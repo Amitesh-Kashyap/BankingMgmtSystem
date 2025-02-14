@@ -8,6 +8,5 @@ import com.bms.Models.Customer;
 public interface CustomerDB extends JpaRepository<Customer, Integer>
 {
     List<Customer> findByName(String name);
-    
-    
+    void deleteByName(String name);
 }

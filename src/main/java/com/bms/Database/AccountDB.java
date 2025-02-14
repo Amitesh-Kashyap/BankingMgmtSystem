@@ -19,5 +19,7 @@ public interface AccountDB extends JpaRepository<Account , Integer>
     // }
     Optional<Account> findByAccountNumber(String accountNumber);
     List<Account> saveAll(List<Account> accounts);
+
+    void deleteByAccountNumber(String accountNumber);
     
 }
